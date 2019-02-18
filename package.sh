@@ -14,3 +14,6 @@ helm package $chart
 mv $chart-*.tgz repo/
 helm repo index repo --url `cat .repourl`
 
+# Force-add files in repo/ to git
+git add repo/ -f
+echo "Files in repo/ have been added to git repository"
