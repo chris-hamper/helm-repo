@@ -3,11 +3,11 @@ entries:
   go-slack-poll:
   - apiVersion: v1
     appVersion: v0.3.4
-    created: 2019-02-18T10:52:37.027453-05:00
+    created: 2019-02-18T11:06:14.57652-05:00
     description: A Helm chart for Kubernetes
-    digest: e33e4b81d7d27aa56ce83a0c2e1b7a0a84c695260be04a87f8951e01a4a9076a
+    digest: 067dbed3d092690675cd69557704158af71af1441de99411e0df402dc9c42cb9
     name: go-slack-poll
     urls:
     - https://chris-hamper.github.io/helm-repo/go-slack-poll-0.3.4.tgz
     version: 0.3.4
-generated: 2019-02-18T10:52:37.023285-05:00
+generated: 2019-02-18T11:06:14.574559-05:00

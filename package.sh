@@ -11,9 +11,15 @@ chart=${1%/}
 
 # Package the chart
 helm package $chart
-mv $chart-*.tgz repo/
-helm repo index repo --url `cat .repourl`
+
+pattern="$chart-*.tgz"
+files=( $pattern )
+file=${files[0]}
+chart_version=${file%.tgz}
+
+mv $file docs/
+helm repo index docs --url `cat .repourl`
 
 # Force-add files in repo/ to git
-git add repo/ -f
-echo "Files in repo/ have been added to git repository"
+git add docs -f
+git commit -em "Add $chart_version chart"
